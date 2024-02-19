@@ -3,59 +3,106 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Резюме</title>
+  <meta name="keywords" content="vladilen, cv, resume">
+  <meta name="description" content="Это сайт - резюме Владилена Минина">
+  <link rel="stylesheet" href="/style.css">
+  <title>Alexey Resume</title>
 </head>
 
 <body>
-  <img src="./Аватар.jpg" alt="это я" width="150">
-  <h1>Алексей Шелаев</h1>
-  <p>Я работаю <strong>медбратом-анестезистом</strong> в реанимации новорожденных</p>
-  <p>Я люблю путешествовать, компьютерные игры, <em>заниматься спортом</em></p>
 
-  <h2>Мои хобби</h2>
-  <ol>
-    <li>Путешествия</li>
-    <li>Компьютерные игры</li>
-    <li>Спорт</li>
-    <li>Автомобили</li>
-  </ol>
-  <h2>Опыт работы</h2>
-  <table>
-    <thead>
-      <tr>
-        <th>Название</th>
-        <th>Должность</th>
-        <th>Год</th>
-      </tr>
-    </thead>
-    <tbody>
-      <td>Мопц</td>
-      <td>Медбрат</td>
-      <td>2012-2024</td>
-    </tbody>
+  <div class="container">
 
-  </table>
-  <h2>Список социальных сетей</h2>
-  <p><a href="https://t.me/pininfarinaa">Telegram</a></p>
-  <form action="">
-    <h1>Связаться со мной</h1>
-    <div>
-      <label for="name">Ваше Имя</label>
-      <input type="text" id="name" placeholder="Введите имя">
-    </div>
-    <div>
-      <label for="email">Ваш email</label>
-      <input type="email" id="email" placeholder="Введите email">
-    </div>
-    <div>
-      <label for="message">Ваше сообщение</label>
-      <br>
-      <textarea name="" id="message" cols="30" rows="10" placeholder="Введите сообщение..."></textarea>
-    </div>
-    <button type="submit">Отправить!</button>
+    <div class="info">
+      <img src="/Аватар.jpg" alt="Владилен Минин" class="avatar">
 
-  </form>
+      <div class="info-text">
+        <h1>Шелаев Алексей</h1>
+
+        <p>Я медбрат-анестезист в <strong>реанимации новорожденных</strong> и студент онлайн школы по программированию
+          <strong>Result
+            School</strong>
+        </p>
+
+        <p>Я люблю <em>путешествовать, заниматься спортом и программировать</em></p>
+
+        <h4>Список социальных сетей:</h4>
+
+        <a href="https://www.instagram.com/vladilen.minin/" target="_blank">Instagram</a>
+        |
+        <a href="https://t.me/js_by_vladilen" target="_blank">Telegram</a>
+        |
+        <a href="https://www.youtube.com/c/VladilenMinin" target="_blank">Youtube</a>
+      </div>
+    </div>
+
+    <div class="card bg-green">
+      <h2>Мои хобби</h2>
+
+      <ol class="list">
+        <li>Путешествия</li>
+        <li>Компьютерные игры</li>
+        <li>Велосипед</li>
+        <li>Спорт</li>
+      </ol>
+    </div>
+
+    <div class="card bg-red">
+      <h2>Опыт работы</h2>
+
+      <table class="table">
+        <!-- <thead>
+          <tr>
+            <th>Название</th>
+            <th>Должность</th>
+            <th>Год</th>
+          </tr>
+        </thead> -->
+        <tbody>
+          <tr>
+            <td>Мопц</td>
+            <td>Медбрат-анестезист</td>
+            <td>2015-2024</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+
+
+    <form action="/" class="form">
+      <h2>Связаться со мной</h2>
+
+      <div class="form-row">
+
+        <div class="form-group">
+          <label for="name">Ваше имя:</label>
+          <input type="text" id="name" placeholder="Введите имя">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Ваш email:</label>
+          <input type="email" id="email" placeholder="Введите email">
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Ваше сообщение:</label>
+        <textarea id="message" cols="20" rows="5" placeholder="Введите сообщение..."></textarea>
+      </div>
+
+      <input class="btn" type="submit" value="Отправить!">
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+  </div>
 </body>
 
 </html>
